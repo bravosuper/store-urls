@@ -41,5 +41,5 @@ server.keepAliveTimeout = 120 * 1000;
 server.headersTimeout = 120 * 1000;
 
 var interval_var = setInterval(() => {
-  https.get("https://expressrandom.onrender.com/pinging");
+  https.get("https://store-urls-f7d5.onrender.com/getall");
 }, 10000)
