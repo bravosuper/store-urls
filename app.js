@@ -13,7 +13,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/record", (req,res) => {
+app.get("/store", (req,res) => {
   var ip = req.query.ip;
   var click_url = req.query.clkurl;
 
