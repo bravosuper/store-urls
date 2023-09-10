@@ -16,8 +16,10 @@ app.use((req, res, next) => {
 app.get("/store", (req,res) => {
   var ip = req.query.ip;
   var click_url = req.query.clkurl;
-
-  var obj = {ip, click_url};
+  var d = new Date();
+  var time = d.getTime();
+  
+  var obj = {ip, time, click_url};  
 
   click_urls_array.push(obj);
 
